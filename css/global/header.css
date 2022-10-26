@@ -55,6 +55,7 @@
     transition: 0.3s;
   }
   .header-menu li a {
+    color: var(--cor-0);
     font-size: 1rem;
   }
   .header-menu li:hover {

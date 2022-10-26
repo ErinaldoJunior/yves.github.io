@@ -4,6 +4,7 @@
 }
 
 .feedback {
+  max-width: max-content;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
@@ -39,5 +40,41 @@
 
   .feedback-texto p {
     font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .feedback {
+    grid-template-columns: 1fr;
+  }
+  .feedback-texto h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .feedback-imagem {
+    flex-wrap: wrap;
+  }
+  .img-none {
+    display: none;
+  }
+  .feedback-bg {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  .feedback {
+    padding: 60px 30px;
+  }
+  .feedback-texto h2 {
+    font-size: 2rem;
+  }
+  .feedback-texto p {
+    font-size: 1rem;
+  }
+  .feedback-imagem img {
+    max-width: 150px;
   }
 }

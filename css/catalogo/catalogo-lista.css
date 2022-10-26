@@ -94,4 +94,7 @@
   .catalogo-lista h2 {
     font-size: 1rem;
   }
+  .catalogo-lista ul {
+    margin: 30px auto;
+  }
 }

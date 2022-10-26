@@ -1,13 +1,11 @@
 .footer-bg {
   background-color: var(--cor-bg3);
-  padding: 30px 0px;
 }
 
 .footer {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  padding: 60px 30px;
-  justify-items: end;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px 20px;
   box-sizing: border-box;
   max-width: 1200px;
   margin: 0 auto;
@@ -32,7 +30,7 @@
 }
 
 .contacto {
-  position: relative;
+  justify-self: end;
 }
 
 .contacto img {
@@ -45,6 +43,7 @@
 }
 
 .contacto a {
+  transition: 0.4s;
   font-size: 1rem;
   color: var(--cor-bg4);
 }
@@ -54,6 +53,37 @@
 }
 
 .copy {
-  padding-top: 30px;
+  margin-bottom: 0px;
+  margin-top: 60px;
+  display: inline-block;
   text-align: center;
+  grid-column: 1 / -1;
+}
+
+footer a:hover {
+  color: var(--cor-0);
+}
+
+@media (max-width: 800px) {
+  .footer {
+    font-size: 70%;
+  }
+}
+
+@media (max-width: 550px) {
+  .footer {
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+    justify-content: center;
+  }
+  .contacto {
+    margin-top: 20px;
+    justify-self: center;
+  }
+  .copy {
+    font-size: initial;
+    color: var(--cor-bg2);
+    border-top: 1px solid var(--cor-bg4);
+    padding-top: 20px;
+  }
 }
