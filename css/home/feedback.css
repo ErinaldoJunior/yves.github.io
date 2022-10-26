@@ -1,0 +1,43 @@
+.feedback-bg {
+  background-color: var(--cor-bg1);
+  margin-top: 120px;
+}
+
+.feedback {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  padding: 60px 30px;
+}
+
+.feedback-imagem {
+  display: flex;
+  gap: 20px;
+}
+
+.feedback-imagem img {
+  max-width: 200px;
+}
+
+.feedback-texto {
+  color: var(--cor-bg4);
+  place-self: center;
+}
+
+@media (max-width: 1080px) {
+  .feedback {
+    gap: 30px;
+  }
+
+  .feedback-imagem img {
+    max-width: 150px;
+  }
+
+  .feedback-texto h2 {
+    font-size: 3rem;
+  }
+
+  .feedback-texto p {
+    font-size: 1.125rem;
+  }
+}
