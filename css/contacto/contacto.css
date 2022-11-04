@@ -155,3 +155,55 @@
   padding-top: 16px;
   max-width: 80ch;
 }
+
+@media (max-width: 930px) {
+  .contactos {
+    grid-template-columns: 1fr;
+  }
+  .contacto-dados {
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    border-radius: 4px;
+  }
+  .contacto-formulario {
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: 560px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+  .form .nome,
+  .form .telefone {
+    grid-column: 1 / -1;
+  }
+  .contactos .contacto-dados h2 {
+    font-size: 1.5rem;
+  }
+
+  .contactos .contacto-dados a {
+    font-size: 1rem;
+  }
+  .contactos-redes img {
+    width: 20px;
+  }
+  #contactos {
+    padding: 5px;
+  }
+  .contacto-dados,
+  .contacto-formulario {
+    padding: 30px;
+  }
+  .perguntas {
+    padding-top: 60px;
+  }
+  .perguntas h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 60px;
+    color: var(--cor-bg4);
+  }
+}

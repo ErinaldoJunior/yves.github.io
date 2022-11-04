@@ -20,6 +20,10 @@
   max-width: 200px;
 }
 
+.feedback-texto h2 {
+  margin-bottom: 20px;
+}
+
 .feedback-texto {
   color: var(--cor-bg4);
   place-self: center;
@@ -47,17 +51,22 @@
   .feedback {
     grid-template-columns: 1fr;
   }
+
+  .feedback-imagem {
+    justify-content: center;
+  }
+
   .feedback-texto h2 {
     text-align: center;
+  }
+  .img-none {
+    display: none;
   }
 }
 
 @media (max-width: 600px) {
   .feedback-imagem {
     flex-wrap: wrap;
-  }
-  .img-none {
-    display: none;
   }
   .feedback-bg {
     margin-top: 0px;
@@ -72,6 +81,7 @@
     font-size: 2rem;
   }
   .feedback-texto p {
+    text-align: center;
     font-size: 1rem;
   }
   .feedback-imagem img {

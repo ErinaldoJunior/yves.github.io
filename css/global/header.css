@@ -75,23 +75,28 @@
 }
 
 @media (max-width: 800px) {
-  .header-menu {
+  .header-menu,
+  .header-menu-2 {
     gap: 20px;
   }
-  .header-menu li {
+  .header-menu li,
+  .header-menu-2 li {
     background-color: var(--cor-bg2);
     padding: 1px 16px;
     border-radius: 5px;
     transition: 0.3s;
   }
-  .header-menu li a {
+  .header-menu li a,
+  .header-menu-2 li a {
     color: var(--cor-0);
     font-size: 1rem;
   }
-  .header-menu li:hover {
+  .header-menu li:hover,
+  .header-menu-2 li:hover {
     background-color: var(--cor-bg4);
   }
-  .header-menu a::after {
+  .header-menu a::after,
+  .header-menu-2 a::after {
     display: none;
   }
 }
@@ -103,7 +108,8 @@
   .header a img {
     margin: 0 auto;
   }
-  .header-menu {
+  .header-menu,
+  .header-menu-2 {
     justify-content: center;
   }
 }
