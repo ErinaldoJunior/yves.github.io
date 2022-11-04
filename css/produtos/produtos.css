@@ -1,0 +1,46 @@
+.titulo-bg {
+  padding: 10px 0px;
+  background-color: var(--cor-bg4);
+}
+
+.produtos-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  justify-content: center;
+}
+
+.produtos-menu a {
+  color: var(--cor-bg1);
+  padding: 8px 0px;
+  display: inline-block;
+  font-size: 1.125rem;
+  position: relative;
+  font-family: "Poppins";
+  font-weight: 500;
+  transition: 0.4s;
+}
+
+.produtos-menu a:hover {
+  color: var(--cor-0);
+}
+
+.promocoes,
+.mais-vendidos {
+  margin-top: 60px;
+}
+
+.promocoes {
+  margin-bottom: 60px;
+}
+
+.lista-produtos {
+  display: flex;
+  gap: 60px;
+}
+
+.selecao-produtos h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 60px;
+}

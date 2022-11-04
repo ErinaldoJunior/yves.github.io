@@ -15,6 +15,8 @@
   transition: 0.4s;
   font-family: "Poppins";
   font-weight: 600;
+  border: none;
+  cursor: pointer;
 }
 
 .botao:hover {
@@ -24,4 +26,133 @@
 
 .destaque {
   color: var(--cor-0);
+}
+
+.titulo-bg {
+  padding: 60px 0px;
+  background-color: var(--cor-bg4);
+}
+
+.selecao-produtos p {
+  color: var(--cor-bg4);
+  font: 500 1rem/1.25 "Poppins", sans-serif;
+  text-align: start;
+  margin-bottom: 10px;
+}
+
+.selecao-produtos li {
+  transition: 0.4s;
+}
+
+.selecao-produtos li:hover {
+  transform: scale(1.05);
+}
+.caminho-produtos {
+  display: flex;
+  gap: 5px;
+  margin: 40px 20px;
+  color: var(--cor-bg1);
+  text-transform: capitalize;
+  align-items: center;
+}
+
+.caminho-produtos a {
+  color: var(--cor-bg4);
+  font-size: 1rem;
+}
+
+.lista-produtos-individual {
+  display: flex;
+  gap: 60px;
+  margin: 40px 0px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#out-stock {
+  position: relative;
+}
+#out-stock::after {
+  content: "Fora de Stock";
+  display: inline-block;
+  font: 400 1rem/1.25 "Poppins", sans-serif;
+  color: var(--cor-0);
+  width: max-content;
+  border-radius: 0 4px 0 4px;
+  padding: 5px 10px;
+  background: var(--cor-bg3);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+#promocao {
+  position: relative;
+}
+#promocao::after {
+  content: "Promoção";
+  display: inline-block;
+  font: 400 1rem/1.25 "Poppins", sans-serif;
+  color: var(--cor-0);
+  width: max-content;
+  border-radius: 0 4px 0 4px;
+  padding: 5px 10px;
+  background: red;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.selecao-produtos .preco {
+  font-size: 1rem;
+  color: var(--cor-bg4);
+  margin-bottom: 0px;
+  border-radius: 4px;
+  text-align: start;
+}
+
+.selecao-produtos .envio {
+  font-size: 0.75rem;
+  text-transform: capitalize;
+  color: seagreen;
+  font-weight: 600;
+}
+
+.botao-comprar {
+  padding: 8px 16px;
+  background-color: var(--cor-bg2);
+  display: block;
+  max-width: max-content;
+  border-radius: 4px;
+  color: var(--cor-0);
+  font-size: 1rem;
+  line-height: 1.33;
+  transition: 0.4s;
+  font-family: "Poppins";
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.botao-comprar:hover {
+  color: var(--cor-bg2);
+  background-color: var(--cor-bg1);
+}
+
+.selecao-produtos .nome-produto {
+  margin-top: 10px;
+}
+
+.not-active {
+  pointer-events: none;
+  cursor: default;
+  background-color: var(--cor-bg1);
+}
+
+.selecao-produtos .opcoes {
+  font-size: 0.75rem;
+  color: var(--cor-bg3);
+}
+
+#footer-index {
+  margin-top: 0px;
 }
