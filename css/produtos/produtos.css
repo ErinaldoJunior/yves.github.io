@@ -43,6 +43,11 @@
   gap: 60px;
 }
 
+.lista-produtos li {
+  display: grid;
+  justify-items: center;
+}
+
 .selecao-produtos h2 {
   font-size: 3rem;
   text-align: center;
