@@ -25,6 +25,10 @@
   color: var(--cor-0);
 }
 
+.produtos-menu a.ativo {
+  border-bottom: 1px solid var(--cor-p1);
+}
+
 .promocoes,
 .mais-vendidos {
   margin-top: 60px;
@@ -55,6 +59,11 @@
     background-color: var(--cor-bg2);
     padding: 0 15px;
     border-radius: 4px;
+  }
+
+  .produtos-menu a.ativo {
+    color: var(--cor-p1);
+    border: none;
   }
 
   .lista-produtos,

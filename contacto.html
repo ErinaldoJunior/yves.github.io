@@ -6,10 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yves | Contacto</title>
   <meta name="description" content="Yves - Joias em Prata no Porto.">
+  <link rel="icon" href="./img/header/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 
 <body>
@@ -29,7 +31,7 @@
   </header>
 
   <main id="contactos">
-    <div class="contactos container">
+    <div class="contactos container fadeInDown" data-anime="200">
       <section class="contacto-dados" aria-label="Contactos">
         <h2 class="texto-medio cor-bg4">Contactos</h2>
         <address>
@@ -70,20 +72,20 @@
       <h2 class="texto-medio">Perguntas Frequentes</h2>
       <dl>
         <div>
-          <dt class="texto-medio">Qual forma de pagamento vocês aceitam?</dt>
-          <dd class="fonte-pequena">Aceitamos pagamentos via MBWAY, numerário e transferência bancária.</dd>
+          <dt><button class="texto-medio pergunta" aria-expanded="true" aria-controls="pergunta1">Qual forma de pagamento vocês aceitam?</button></dt>
+          <dd class="fonte-pequena ativa" id="pergunta1">Aceitamos pagamentos via MBWAY, numerário e transferência bancária.</dd>
         </div>
         <div>
-          <dt class="texto-medio">Como posso entrar em contato?</dt>
-          <dd class="fonte-pequena">Pode entrar em contacto através do <a href="https://www.instagram.com/yvespratas/">Instagram</a> ou <a href="https://wa.me/message/L4YN3JKKFWBUO1">WhatsApp</a>.</dd>
+          <dt><button class="texto-medio pergunta" aria-expanded="false" aria-controls="pergunta2">Como posso entrar em contato?</button></dt>
+          <dd class="fonte-pequena" id="pergunta2">Pode entrar em contacto através do <a href="https://www.instagram.com/yvespratas/">Instagram</a> ou <a href="https://wa.me/message/L4YN3JKKFWBUO1">WhatsApp</a>.</dd>
         </div>
         <div>
-          <dt class="texto-medio">Qual a garantia que possuo?</dt>
-          <dd class="fonte-pequena">Oferecemos garantia de 3 anos em nossos produtos, entretanto a garantia não cobre defeitos de uso.</dd>
+          <dt><button class="texto-medio pergunta" aria-expanded="false" aria-controls="pergunta3">Qual a garantia que possuo?</button></dt>
+          <dd class="fonte-pequena" id="pergunta3">Oferecemos garantia de 3 anos em nossos produtos, entretanto a garantia não cobre defeitos de uso.</dd>
         </div>
         <div>
-          <dt class="texto-medio">Posso trocar ou devolver?</dt>
-          <dd class="fonte-pequena">Devido ao facto de se tratarem de produtos de uso pessoal, não aceitamos trocas nem devoluções.</dd>
+          <dt><button class="texto-medio pergunta" aria-expanded="false" aria-controls="pergunta4">Posso trocar ou devolver?</button></dt>
+          <dd class="fonte-pequena" id="pergunta4">Devido ao facto de se tratarem de produtos de uso pessoal, não aceitamos trocas nem devoluções.</dd>
         </div>
       </dl>
     </article>
@@ -110,6 +112,8 @@
     </div>
 
   </footer>
+  <script src="./js/plugins/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

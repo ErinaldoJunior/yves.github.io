@@ -6,10 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yves - Joias em Prata</title>
   <meta name="description" content="Yves - Joias em Prata no Porto.">
+
+  <link rel="icon" href="./img/header/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 
 <body>
@@ -31,10 +35,10 @@
   <main class="introducao-bg">
     <div class="introducao">
       <div class="introducao-conteudo">
-        <h1 class="cor-0">to enhance your beauty</h1>
-        <a class="botao" href="./produtos.html">Catálogo</a>
+        <h1 class="cor-0 fadeInDown" data-anime="200">to enhance your beauty</h1>
+        <a class="botao fadeInDown" href="./produtos.html" data-anime="400">Catálogo</a>
       </div>
-      <img src="./img/introducao/intro1.jpg" alt="foto principal">
+      <img class="fadeInDown" src="./img/introducao/intro1.jpg" alt="foto principal" data-anime="600">
     </div>
   </main>
 
@@ -122,6 +126,8 @@
     </div>
 
   </footer>
+  <script src="./js/plugins/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

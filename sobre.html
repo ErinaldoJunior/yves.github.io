@@ -6,10 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yves | Sobre</title>
   <meta name="description" content="Yves - Joias em Prata no Porto.">
+  <link rel="icon" href="./img/header/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 
 <body>
@@ -30,13 +32,13 @@
 
   <main id="sobre">
     <div class="sobre container">
-      <h2 class="texto-medio col-2">Quem Somos</h2>
-      <div class=" sobre-conteudo">
+      <h2 class="texto-medio col-2 fadeInDown" data-anime="200">Quem Somos</h2>
+      <div class=" sobre-conteudo fadeInDown" data-anime="400">
         <p class="texto-medio">A Yves Pratas surgiu em 2021 através do desejo de empreender, com um pequeno estoque de peças de pratas vendendo para os amigos, conhecidos e através das redes sociais. A vontade de expandir, a coragem de investir e a busca constante pelo novo idealizou o nome da marca, transmitindo o espírito do negócio. O nome da marca significa "Deus é misericordioso", pois acreditamos e temos isto como verdade de vida. Com a habilidade de liderar pessoas, a experiência em vendas e o desenvolvimento das redes sociais, a marca foi ficando cada vez mais conhecida, aumentando a procura por pessoas interessadas em adquirir as peças, como também, de revender.</p>
       </div>
       <div class="sobre-imagem">
-        <img src="./img/sobre/s2.jpg" alt="">
-        <img class="img-none" src="./img/sobre/s3.png" alt="anel cruz">
+        <img class="fadeInRight" src="./img/sobre/s2.jpg" alt="" data-anime="600">
+        <img class="img-none fadeInRight" src="./img/sobre/s3.png" alt="anel cruz" data-anime="600">
       </div>
     </div>
 
@@ -63,6 +65,8 @@
     </div>
 
   </footer>
+  <script src="./js/plugins/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
