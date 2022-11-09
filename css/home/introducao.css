@@ -90,3 +90,9 @@
     margin-top: 10px;
   }
 }
+
+@media (max-width: 350px) {
+  .introducao-conteudo {
+    padding-top: 80px;
+  }
+}

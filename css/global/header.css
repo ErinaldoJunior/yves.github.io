@@ -87,7 +87,7 @@
   }
   .header-menu {
     position: initial;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
   }
 
   #burguer {
@@ -103,7 +103,7 @@
   }
   .header-menu {
     text-align: center;
-    margin-bottom: 80px;
+    padding-bottom: 20px;
   }
 }
 
