@@ -7,11 +7,12 @@
   <title>Yves | Contacto</title>
   <meta name="description" content="Yves - Joias em Prata no Porto.">
   <link rel="icon" href="./img/header/favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="./css/style.min.css" as="style">
-  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="preload" href="./css/style.css" as="style">
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <script>document.documentElement.classList.add("js")</script>
 </head>
 
@@ -21,14 +22,15 @@
       <a href="./">
         <img src="./img/header/logo3.svg" alt="Logo Yves">
       </a>
-      <nav aria-label="primaria">
-        <ul class="header-menu-2">
-          <li><a class="cor-bg2" href="./index.html">Home</a></li>
-          <li><a class="cor-bg2" href="./sobre.html">Sobre</a></li>
-          <li><a class="cor-bg2" href="./produtos.html">Produtos</a></li>
-        </ul>
-      </nav>
+      <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()"> menu </span>
     </div>
+    <nav aria-label="primaria">
+      <div class="header-menu" id="itens">
+        <a class="cor-bg2" href="./index.html">Home</a>
+        <a class="cor-bg2" href="./produtos.html">Produtos</a>
+        <a class="cor-bg2" href="./sobre.html">Sobre</a>
+      </div>
+    </nav>
   </header>
 
   <main id="contactos">

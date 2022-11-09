@@ -43,7 +43,8 @@
   gap: 60px;
 }
 
-.lista-produtos li {
+.lista-produtos li,
+.lista-produtos-individual li {
   display: grid;
   justify-items: center;
 }

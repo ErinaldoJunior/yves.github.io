@@ -7,11 +7,12 @@
   <title>Yves | Tornozeleiras</title>
   <meta name="description" content="Yves - Joias em Prata no Porto.">
   <link rel="icon" href="../img/header/favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="../css/style.min.css" as="style">
-  <link rel="stylesheet" href="../css/style.min.css">
+  <link rel="preload" href="../css/style.css" as="style">
+  <link rel="stylesheet" href="../css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <script>document.documentElement.classList.add("js")</script>
 </head>
 
@@ -21,14 +22,15 @@
       <a href="../">
         <img src="../img/header/logo3.svg" alt="Logo Yves">
       </a>
-      <nav aria-label="primaria">
-        <ul class="header-menu-2">
-          <li><a class="cor-bg2" href="../index.html">Home</a></li>
-          <li><a class="cor-bg2" href="../sobre.html">Sobre</a></li>
-          <li><a class="cor-bg2" href="../contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
+      <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()"> menu </span>
     </div>
+    <nav aria-label="primaria">
+      <div class="header-menu" id="itens">
+        <a class="cor-bg2" href="../index.html">Home</a>
+        <a class="cor-bg2" href="../sobre.html">Sobre</a>
+        <a class="cor-bg2" href="../contacto.html">Contacto</a>
+      </div>
+    </nav>
   </header>
 
   <main>
@@ -54,28 +56,28 @@
         <li id="out-stock">
           <img src="../img/produtos/tornozeleiras/p001.jpg" alt="Tornozeleira Medalhas">
           <p class="nome-produto">Tornozeleira Medalhas</p>
-          <p class="envio"> Envios para todo País</p>
+          <p class="envio"> Enviamos para todo país</p>
           <p class="preco"><strong>10,00€</strong></p>
           <a class="botao-comprar not-active" href="https://wa.me/message/L4YN3JKKFWBUO1">Indisponível</a>
         </li>
         <li id="out-stock">
           <img src="../img/produtos/tornozeleiras/p002.jpg" alt="Tornozeleira 4 Estrelas Vazadas">
           <p class="nome-produto">Tornozeleira 4 Estrelas Vazadas</p>
-          <p class="envio"> Envios para todo País</p>
+          <p class="envio"> Enviamos para todo país</p>
           <p class="preco"><strong>10,00€</strong></p>
           <a class="botao-comprar not-active" href="https://wa.me/message/L4YN3JKKFWBUO1">Indisponível</a>
         </li>
         <li id="out-stock">
           <img src="../img/produtos/tornozeleiras/p003.jpg" alt="Tornozeleira Estrelinhas">
           <p class="nome-produto">Tornozeleira Estrelinhas</p>
-          <p class="envio"> Envios para todo País</p>
+          <p class="envio"> Enviamos para todo país</p>
           <p class="preco"><strong>10,00€</strong></p>
           <a class="botao-comprar not-active" href="https://wa.me/message/L4YN3JKKFWBUO1">Indisponível</a>
         </li>
         <li id="out-stock">
           <img src="../img/produtos/tornozeleiras/p004.jpg" alt="Tornozeleira Luas e Estrelas">
           <p class="nome-produto">Tornozeleira Luas e Estrelas</p>
-          <p class="envio"> Envios para todo País</p>
+          <p class="envio"> Enviamos para todo país</p>
           <p class="preco"><strong>10,00€</strong></p>
           <a class="botao-comprar not-active" href="https://wa.me/message/L4YN3JKKFWBUO1">Indisponível</a>
         </li>
